@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Portfolio professionnel de Fedi Haddad, expert IoT, Systèmes Embarqués et IA (Deep Learning). Étudiant en dernière année à l'ISIMA." />
+  <meta name="keywords"
+    content="IoT, systèmes embarqués, IA, Deep Learning, TensorFlow, ISIMA, Mahdia, Tunisie, Fedi Haddad" />
+  <meta name="author" content="Fedi Haddad" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://fedihaddad.me/" />
+  <meta property="og:title" content="Fedi Haddad - Expert IoT & IA" />
+  <meta property="og:description"
+    content="Découvrez mes projets en IoT, Robotique et Intelligence Artificielle. Spécialiste Deep Learning et Systèmes Embarqués." />
+  <meta property="og:image" content="avatar.png" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://fedihaddad.me/" />
+  <meta name="twitter:title" content="Fedi Haddad - Expert IoT & IA" />
+  <meta name="twitter:description"
+    content="Découvrez mes projets en IoT, Robotique et Intelligence Artificielle. Spécialiste Deep Learning et Systèmes Embarqués." />
+  <meta name="twitter:image" content="avatar.png" />
+
+  <title>Fedi Haddad - Portfolio Professionnel</title>
+
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+  <!-- Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="portfolio.css">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Fedi Haddad",
+    "jobTitle": "Développeur IoT & Systèmes Embarqués",
+    "url": "https://fedihaddad.me",
+    "sameAs": [
+      "https://linkedin.com/in/fedi-haddad-aa59aa243/",
+      "https://github.com/fedihaddad",
+      "https://www.facebook.com/fedi.haddad.685034/"
+    ],
+    "knowsAbout": ["IoT", "Systèmes Embarqués", "Intelligence Artificielle", "Robotique"],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Tunis",
+      "addressCountry": "TN"
+    }
+  }
+  </script>
+
+  <style>
+    /* All CSS moved to portfolio.css */
+  </style>
+</head>
+
+<body data-theme="dark">
+  <!-- Skip to main content link for accessibility -->
+  <a href="#hero" class="skip-link">Aller au contenu principal</a>
+  <!-- Loading Screen -->
+  <div class="loading" id="loading">
+    <div class="loader"></div>
+  </div>
+
+  <!-- Background Animation -->
+  <div class="bg-animation"></div>
+
+  <!-- Floating Particles -->
+  <div class="particles" id="particles"></div>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <div class="logo">Fedi Haddad</div>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero" class="nav-link active">Accueil</a></li>
+        <li><a href="#skills" class="nav-link">Compétences</a></li>
+        <li><a href="#projects" class="nav-link">Projets</a></li>
+        <li><a href="#experience" class="nav-link">Expérience</a></li>
+        <li><a href="#education" class="nav-link">Formation</a></li>
+        <li><a href="#blog" class="nav-link">Blog</a></li>
+        <li><a href="#achievements" class="nav-link">Réalisations</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="chatbot-toggle" id="chatbotToggle" aria-label="Ouvrir le chatbot" aria-expanded="false">
+          <i class="fas fa-robot"></i>
+        </button>
+        <button class="theme-toggle" id="themeToggle" aria-label="Basculer entre le thème clair et sombre">
+          <i class="fas fa-moon"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section - Split Layout -->
+  <section class="hero" id="hero">
+    <!-- Left side - Hero Card -->
+    <div class="hero-left animate-on-scroll">
+      <div class="hero-avatar">
+        <img src="avatar.png" alt="Fedi Haddad - Développeur IoT" loading="lazy">
+      </div>
+      <h1>Fedi Haddad</h1>
+      <p class="subtitle">Développeur IoT & Systèmes Embarqués</p>
+      <p class="description">
+        Passionné d'IA et de robotique, je conçois des solutions innovantes qui connectent
+        le monde physique au numérique avec une approche centrée sur l'impact social.
+      </p>
+      <div class="cta-buttons">
+        <a href="#contact" class="btn btn-primary">
+          <i class="fas fa-envelope"></i>
+          Me Contacter
+        </a>
+        <a href="FEDI_HADDAD_CV.pdf" download class="btn btn-secondary" aria-label="Télécharger le CV de Fedi Haddad">
+          <i class="fas fa-download"></i>
+          Télécharger CV
+        </a>
+      </div>
+    </div>
+
+    <!-- Right side - Bio and Skills Preview -->
+    <div class="hero-right">
+      <div class="bio-section animate-on-scroll">
+        <h2>
+          <i class="fas fa-user"></i>
+          À propos
+        </h2>
+        <p class="bio-text">
+          Passionné par les technologies innovantes avec 3 ans d'expérience dans le développement de solutions IoT.
+          Mon expertise couvre les systèmes embarqués, l'intelligence artificielle et la robotique, avec un focus
+          particulier sur les applications ayant un impact social positif.
+        </p>
+        <p class="bio-text">
+          Je crois fermement que la technologie doit servir l'humanité. C'est pourquoi je m'attache à développer
+          des solutions durables et accessibles qui améliorent concrètement la vie des utilisateurs.
+        </p>
+        <div class="highlight-stats">
+          <div class="stat-item">
+            <span class="stat-number">15+</span>
+            <div class="stat-label">Projets IoT</div>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">3</span>
+            <div class="stat-label">Années d'expérience</div>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">3</span>
+            <div class="stat-label">Prix Innovation</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-preview animate-on-scroll">
+        <h2>
+          <i class="fas fa-code"></i>
+          Compétences Clés
+        </h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <div class="skill-icon">
+              <i class="fas fa-microchip"></i>
+            </div>
+            <h3>Systèmes Embarqués</h3>
+            <div class="skills-list">
+              <span class="skill-tag">Arduino</span>
+              <span class="skill-tag">ESP32</span>
+              <span class="skill-tag">STM32</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <div class="skill-icon">
+              <i class="fas fa-wifi"></i>
+            </div>
+            <h3>IoT & Connectivité</h3>
+            <div class="skills-list">
+              <span class="skill-tag">MQTT</span>
+              <span class="skill-tag">LoRaWAN</span>
+              <span class="skill-tag">Bluetooth</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <div class="skill-icon">
+              <i class="fas fa-robot"></i>
+            </div>
+            <h3>IA & Robotique</h3>
+            <div class="skills-list">
+              <span class="skill-tag">ML</span>
+              <span class="skill-tag">Computer Vision</span>
+              <span class="skill-tag">ROS</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <div class="skill-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3>Programmation</h3>
+            <div class="skills-list">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">C/C++</span>
+              <span class="skill-tag">JavaScript</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="section-header animate-on-scroll">
+      <h2 class="section-title">Compétences</h2>
+      <p class="section-subtitle">
+        Une expertise technique diversifiée au service de l'innovation
+      </p>
+    </div>
+    <div class="skills-full-grid">
+      <div class="glass-card animate-on-scroll">
+        <div class="skill-category-full">
+          <div class="skill-icon-full">
+            <i class="fas fa-code"></i>
+          </div>
+          <h3>Programmation</h3>
+          <div class="skills-list-full">
+            <span class="skill-tag-full">Python</span>
+            <span class="skill-tag-full">C/C++</span>
+            <span class="skill-tag-full">JavaScript</span>
+            <span class="skill-tag-full">Java</span>
+            <span class="skill-tag-full">Go</span>
+            <span class="skill-tag-full">Rust</span>
+          </div>
+        </div>
+      </div>
+      <div class="glass-card animate-on-scroll">
+        <div class="skill-category-full">
+          <div class="skill-icon-full">
+            <i class="fas fa-microchip"></i>
+          </div>
+          <h3>Systèmes Embarqués</h3>
+          <div class="skills-list-full">
+            <span class="skill-tag-full">Arduino</span>
+            <span class="skill-tag-full">Raspberry Pi</span>
+            <span class="skill-tag-full">ESP32/ESP8266</span>
+            <span class="skill-tag-full">STM32</span>
+            <span class="skill-tag-full">PIC</span>
+            <span class="skill-tag-full">FPGA</span>
+          </div>
+        </div>
+      </div>
+      <div class="glass-card animate-on-scroll">
+        <div class="skill-category-full">
+          <div class="skill-icon-full">
+            <i class="fas fa-wifi"></i>
+          </div>
+          <h3>IoT & Connectivité</h3>
+          <div class="skills-list-full">
+            <span class="skill-tag-full">MQTT</span>
+            <span class="skill-tag-full">LoRaWAN</span>
+            <span class="skill-tag-full">Bluetooth LE</span>
+            <span class="skill-tag-full">WiFi</span>
+            <span class="skill-tag-full">Zigbee</span>
+            <span class="skill-tag-full">NB-IoT</span>
+          </div>
+        </div>
+      </div>
+      <div class="glass-card animate-on-scroll">
+        <div class="skill-category-full">
+          <div class="skill-icon-full">
+            <i class="fas fa-robot"></i>
+          </div>
+          <h3>IA & Robotique</h3>
+          <div class="skills-list-full">
+            <span class="skill-tag-full">Machine Learning</span>
+            <span class="skill-tag-full">Computer Vision</span>
+            <span class="skill-tag-full">ROS/ROS2</span>
+            <span class="skill-tag-full">TensorFlow</span>
+            <span class="skill-tag-full">OpenCV</span>
+            <span class="skill-tag-full">PyTorch</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="section-header animate-on-scroll">
+      <h2 class="section-title">Projets</h2>
+      <p class="section-subtitle">
+        Découvrez mes réalisations les plus marquantes
+      </p>
+    </div>
+    <div class="projects-grid">
+      <div class="glass-card project-card animate-on-scroll">
+        <div class="project-image">
+          <img src="sante.jpg" alt="Système IoT de surveillance de santé" loading="lazy">
+        </div>
+        <div class="project-content">
+          <h3>Système IoT de Surveillance Santé</h3>
+          <p>Plateforme complète de monitoring des signes vitaux en temps réel avec alertes intelligentes et tableau de
+            bord médical avancé.</p>
+          <div class="project-tech">
+            <span class="tech-tag">Arduino</span>
+            <span class="tech-tag">ESP32</span>
+            <span class="tech-tag">MQTT</span>
+            <span class="tech-tag">React</span>
+            <span class="tech-tag">Node.js</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="glass-card project-card animate-on-scroll">
+        <div class="project-image">
+          <img src="robot.jpg" alt="Robot autonome de navigation" loading="lazy">
+        </div>
+        <div class="project-content">
+          <h3>Robot de Navigation Autonome</h3>
+          <p>Robot intelligent capable de navigation autonome avec évitement d'obstacles et cartographie SLAM en temps
+            réel.</p>
+          <div class="project-tech">
+            <span class="tech-tag">ROS</span>
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">OpenCV</span>
+            <span class="tech-tag">LIDAR</span>
+            <span class="tech-tag">Raspberry Pi</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="glass-card project-card animate-on-scroll">
+        <div class="project-image">
+          <img src="agriculture.png" alt="IA de détection des maladies des plantes" loading="lazy">
+        </div>
+        <div class="project-content">
+          <h3>IA de Diagnostic Phyto-Sanitaire</h3>
+          <p>Modèle de Deep Learning (CNN) développé avec TensorFlow capable de détecter automatiquement les maladies
+            des plantes et de proposer des solutions de traitement via un tableau de bord interactif.</p>
+          <div class="project-tech">
+            <span class="tech-tag">TensorFlow</span>
+            <span class="tech-tag">Deep Learning</span>
+            <span class="tech-tag">CNN</span>
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Dashboard</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience">
+    <div class="section-header animate-on-scroll">
+      <h2 class="section-title">Expérience</h2>
+      <p class="section-subtitle">
+        Mon parcours professionnel dans l'innovation technologique
+      </p>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item glass-card animate-on-scroll">
+        <h3>Stagiaire Développeur Robotique & IA</h3>
+        <h4>DigiGrowing</h4>
+        <span>Août 2025 - Septembre 2025</span>
+        <p>Conception d'un robot éducatif interactif pour enfants : intégration d'une caméra et de deux bras articulés.
+          Développement d'une interface multilingue (Arabe, Français, Anglais) permettant l'interaction vocale, le
+          tutorat scolaire et le storytelling. Mise en place d'un dashboard de supervision parentale pour le suivi des
+          programmes éducatifs et la sécurité.</p>
+      </div>
+      <div class="timeline-item glass-card animate-on-scroll">
+        <h3>Stagiaire Développeur IoT & Full-Stack</h3>
+        <h4>QuetraTech</h4>
+        <span>Juillet 2025 - Août 2025</span>
+        <p>Développement d'un système intelligent de gestion d'accès pour pépinière d'entreprises. Implémentation du
+          contrôle d'accès par RFID, gestion complète des utilisateurs (CRUD) et historique détaillé par bureau.
+          Conception d'un dashboard temps réel intégrant un système de paiement et de facturation automatisé pour la
+          gestion administrative.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education">
+    <div class="section-header animate-on-scroll">
+      <h2 class="section-title">Formation</h2>
+      <p class="section-subtitle">
+        Mon parcours académique et formations continues
+      </p>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item glass-card animate-on-scroll">
+        <h3>Licence en IoT et Systèmes Embarqués (Dernière année)</h3>
+        <h4>Institut Supérieur d'Informatique de Mahdia (ISIMA)</h4>
+        <span>2023 - 2026 (Actuellement en 2025-2026)</span>
+        <p>Phase finale de la licence spécialisée en IoT, systèmes embarqués et intelligence artificielle. Préparation
+          du projet de fin d'études.</p>
+      </div>
+      <div class="timeline-item glass-card animate-on-scroll">
+        <h3>Baccalauréat en Informatique</h3>
+        <h4>Lycée Secondaire</h4>
+        <span>Obtenu en 2023</span>
+        <p>Diplôme de fin d'études secondaires, marquant le début du parcours spécialisé en technologies de
+          l'Information.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section id="blog">
+    <div class="section-header animate-on-scroll">
+      <h2 class="section-title">Blog</h2>
+      <p class="section-subtitle">
+        Mes réflexions sur l'innovation technologique
+      </p>
+    </div>
+    <div class="blog-grid">
+      <article class="glass-card blog-card animate-on-scroll">
+        <div class="blog-image">
+          <i class="fas fa-microchip"></i>
+        </div>
+        <div class="blog-meta">15 Janvier 2024</div>
+        <h3 class="blog-title">L'avenir des systèmes embarqués dans l'IoT</h3>
+        <p class="blog-excerpt">Exploration des tendances émergentes et des défis techniques dans le développement de
+          systèmes embarqués pour l'Internet des Objets.</p>
+      </article>
+      <article class="glass-card blog-card animate-on-scroll">
+        <div class="blog-image">
+          <i class="fas fa-robot"></i>
+        </div>
+        <div class="blog-meta">8 Janvier 2024</div>
+        <h3 class="blog-title">IA et robotique : vers une symbiose parfaite</h3>
+        <p class="blog-excerpt">Comment l'intelligence artificielle révolutionne la robotique moderne et ouvre de
+          nouvelles perspectives d'innovation.</p>
+      </article>
+      <article class="glass-card blog-card animate-on-scroll">
+        <div class="blog-image">
+          <i class="fas fa-leaf"></i>
+        </div>
+        <div class="blog-meta">2 Janvier 2024</div>
+        <h3 class="blog-title">IoT et développement durable</h3>
+        <p class="blog-excerpt">L'impact positif des technologies IoT sur l'environnement et leur rôle dans la
+          transition écologique.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Achievements Section -->
+  <section id="achievements">
+    <div class="section-header animate-on-scroll">
+      <h2 class="section-title">Réalisations</h2>
+      <p class="section-subtitle">
+        Reconnaissances et accomplissements marquants
+      </p>
+    </div>
+    <div class="achievements-grid">
+
+      <div class="glass-card achievement-card animate-on-scroll">
+        <div class="achievement-icon">
+          <i class="fas fa-cubes"></i>
+        </div>
+        <h3>Hashgraph Developer</h3>
+        <h4>The Hashgraph Association</h4>
+        <p>Certification de développeur sur la technologie Hedera Hashgraph (DLT), attestant des compétences en
+          développement de smart contracts et d'applications décentralisées. (Déc. 2024)</p>
+        <div class="cert-id">ID: f73bc0a5-deb5-47fe-831e-7e2b8ec68713</div>
+        <a href="Certificat_Hashgraph_Developer.pdf" target="_blank" class="view-cert">
+          <i class="fas fa-external-link-alt"></i> Voir le certificat
+        </a>
+      </div>
+      <div class="glass-card achievement-card animate-on-scroll">
+        <div class="achievement-icon">
+          <i class="fas fa-certificate"></i>
+        </div>
+        <h3>Certification AWS IoT</h3>
+        <p>Certification professionnelle AWS IoT Core, démontrant une expertise avancée dans les solutions cloud IoT.
+        </p>
+      </div>
+      <div class="glass-card achievement-card animate-on-scroll">
+        <div class="achievement-icon">
+          <i class="fab fa-nvidia"></i>
+        </div>
+        <h3>Deep Learning Fundamentals</h3>
+        <p>Certification NVIDIA DLI couvrant les concepts fondamentaux de l'entraînement de modèles de Deep Learning.
+        </p>
+        <a href="NVIDIA_Deep_Learning_Fundamentals.pdf" target="_blank" class="view-cert">
+          <i class="fas fa-external-link-alt"></i> Voir le certificat
+        </a>
+      </div>
+      <div class="glass-card achievement-card animate-on-scroll">
+        <div class="achievement-icon">
+          <i class="fab fa-nvidia"></i>
+        </div>
+        <h3>Multi-GPU Deep Learning</h3>
+        <p>Certification NVIDIA DLI sur le parallélisme des données et l'entraînement à grande échelle sur plusieurs
+          GPUs.</p>
+        <a href="NVIDIA_Data_Parallelism.pdf" target="_blank" class="view-cert">
+          <i class="fas fa-external-link-alt"></i> Voir le certificat
+        </a>
+      </div>
+      <div class="glass-card achievement-card animate-on-scroll">
+        <div class="achievement-icon">
+          <i class="fas fa-users"></i>
+        </div>
+        <h3>Membre Actif Enactus</h3>
+        <p>Participation active au programme Enactus pour l'année 2024 - 2025, développant des projets à fort impact
+          social et entrepreneurial.</p>
+        <a href="Certificat_Enactus_Fedi_Haddad.pdf" target="_blank" class="view-cert">
+          <i class="fas fa-external-link-alt"></i> Voir le certificat
+        </a>
+      </div>
+      <div class="glass-card achievement-card animate-on-scroll">
+        <div class="achievement-icon">
+          <i class="fas fa-hands-helping"></i>
+        </div>
+        <h3>Bénévole & Animateur</h3>
+        <h4>Association PNL & Union Européenne</h4>
+        <p>Engagement citoyen et animation d'ateliers de robotique au sein des collèges et lycées de Mahdia avec
+          l'Association PNL (Pensée Nationale Libre) et l'Union Européenne.</p>
+      </div>
+      <div class="glass-card achievement-card animate-on-scroll">
+        <div class="achievement-icon">
+          <i class="fas fa-code-branch"></i>
+        </div>
+        <h3>Contributeur Open Source</h3>
+        <p>Contributions actives à des projets open source majeurs dans l'écosystème IoT et robotique.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="section-header animate-on-scroll">
+      <h2 class="section-title">Contact</h2>
+      <p class="section-subtitle">
+        Discutons de vos projets innovants
+      </p>
+    </div>
+    <div class="contact-content">
+      <div class="contact-info animate-on-scroll">
+        <h3>Restons en contact</h3>
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <div>
+            <strong>Email</strong><br>
+            fedihaddad76@gmail.com
+          </div>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-phone"></i>
+          <div>
+            <strong>Téléphone</strong><br>
+            +216 58 666 779
+          </div>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <div>
+            <strong>Localisation</strong><br>
+            Tunis, Tunisie
+          </div>
+        </div>
+        <div class="social-links">
+          <a href="https://linkedin.com/in/fedi-haddad-aa59aa243/" class="social-link" target="_blank"
+            aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/fedihaddad" class="social-link" target="_blank" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.facebook.com/fedi.haddad.685034/" class="social-link" target="_blank"
+            aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </div>
+      </div>
+      <form class="contact-form glass-card animate-on-scroll" action="https://formspree.io/f/mqaejvyj" method="POST"
+        id="contactForm">
+        <div class="form-group">
+          <label for="name">Nom complet</label>
+          <input type="text" id="name" name="name" required aria-required="true">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="_replyto" required aria-required="true">
+        </div>
+        <div class="form-group">
+          <label for="subject">Sujet</label>
+          <input type="text" id="subject" name="subject" required aria-required="true">
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required aria-required="true"></textarea>
+        </div>
+        <input type="hidden" name="_subject" value="Nouveau message de votre Portfolio">
+        <button type="submit" class="btn btn-primary">
+          <i class="fas fa-paper-plane"></i>
+          Envoyer le message
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Fedi Haddad. Tous droits réservés. Conçu avec passion pour l'innovation.</p>
+  </footer>
+
+
+
+
+
+  <!-- Chatbot -->
+  <div class="chatbot" id="chatbot">
+    <div class="chatbot-header">
+      <div class="chatbot-title">
+        <i class="fas fa-robot"></i>
+        Assistant IoT
+      </div>
+      <button class="chatbot-close" id="chatbotClose">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <div class="chatbot-messages" id="chatbotMessages">
+      <div class="message bot">
+        Bonjour ! Je suis l'assistant virtuel de Fedi. Je peux répondre à vos questions sur ses compétences, projets et
+        expérience en IoT. Comment puis-je vous aider ?
+      </div>
+    </div>
+    <div class="chatbot-input">
+      <input type="text" id="chatbotInput" placeholder="Posez votre question..." aria-label="Zone de saisie du chatbot">
+      <button id="chatbotSend" aria-label="Envoyer le message">
+        <i class="fas fa-paper-plane"></i>
+      </button>
+    </div>
+  </div>
+
+
+  <script src="script.js" defer></script>
+</body>
+
+</html>
