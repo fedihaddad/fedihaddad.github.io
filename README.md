@@ -28,6 +28,4 @@ Bienvenue sur le dépôt de mon portfolio professionnel. Je suis un passionné d
 
 ---
 *Développé par [Fedi Haddad](https://github.com/fedihaddad)*
-=======
-# fedihaddad.github.io
->>>>>>> 919e7739ca73c24017040314ca90737e5a4dfafa
+

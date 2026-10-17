@@ -12,3 +12,4 @@ Thumbs.db
 # Project specific
 .qodo/
 node_modules/
+*123*.pdf
